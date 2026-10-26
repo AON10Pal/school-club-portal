@@ -8,8 +8,8 @@ This starter website helps students discover school clubs. It intentionally leav
 
 1. Sign in to your own student GitHub account.
 2. Fork [Mishael-2584/school-club-portal](https://github.com/Mishael-2584/school-club-portal).
-3. In your fork, choose **Code → Codespaces → Create codespace on main**.
-4. Follow the [student task sheet](docs/STUDENT_TASKS.md).
+3. Choose to clone your fork onto your computer **or** open it in GitHub Codespaces.
+4. Follow the [student task sheet](docs/STUDENT_TASKS.md), which includes setup instructions for both options.
 
 The student needs a different GitHub account from the original repository owner to practise this fork workflow.
 

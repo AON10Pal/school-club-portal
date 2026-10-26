@@ -2,9 +2,39 @@
 
 Allow 90–120 minutes. You are contributing to another developer's website. Your work should reach the original project through a pull request.
 
-## 1. Fork and open Codespaces
+## 1. Fork and choose where to work
 
-Open https://github.com/Mishael-2584/school-club-portal and click **Fork**. Confirm your copy belongs to your own account. In your fork, choose **Code → Codespaces → Create codespace on main**. Find the project files in Explorer.
+Open https://github.com/Mishael-2584/school-club-portal and click **Fork**. Confirm your copy belongs to your own account. Then choose **Option A or Option B** below. Both options use the same branch, editing, commit, push, and pull request steps.
+
+### Option A: Work on your computer (local repository)
+
+You need Git, a text editor such as Visual Studio Code, a web browser, and an internet connection to clone and push. Python is not required for the local option.
+
+1. Install Git if needed and open a new terminal. Run `git --version` to check it is available.
+2. On **your fork**, select **Code → Local → HTTPS** and copy the clone URL.
+3. Open a terminal in the folder where you want to store your project. Run the following, replacing `YOUR-USERNAME` with your GitHub username. If you renamed your fork, use its copied URL instead.
+
+```sh
+git clone https://github.com/YOUR-USERNAME/school-club-portal.git
+cd school-club-portal
+git remote -v
+```
+
+Confirm `origin` points to **your fork**, so you can push your contribution there.
+
+4. Open this folder in your editor using **File → Open Folder**. If the VS Code command is available, you can also run `code .`.
+5. If this is your first time using Git on this computer, set the name and email for commits in this repository. Replace these examples with your own details; you can use your GitHub-provided private commit email from GitHub's email settings.
+
+```sh
+git config user.name "Your Name"
+git config user.email "YOUR-COMMIT-EMAIL"
+```
+
+Keep your terminal in the cloned project folder for the remaining commands. When pushing, complete Git's GitHub sign-in prompt if requested; do not use your GitHub account password as a Git HTTPS password. Cloning your fork gives you a local Git repository; downloading a ZIP does not provide the Git history needed for this exercise.
+
+### Option B: Work in GitHub Codespaces
+
+In your fork, choose **Code → Codespaces → Create codespace on main**. Find the project files in Explorer and open the integrated terminal for the remaining commands.
 
 Before starting, check your account's Codespaces allowance and billing settings. See [Codespaces billing](https://docs.github.com/en/billing/concepts/product-billing/github-codespaces). Select a 2-core machine if available. Stop the Codespace when finished; closing the browser tab alone is not a reliable way to stop it. Stored Codespaces can continue to consume storage allowance.
 
@@ -22,7 +52,11 @@ git switch -c improve-school-portal
 - Make the Explore Our Clubs button navigate to the clubs page.
 - Add a short description of your contribution to `README.md`.
 
-Preview with `python3 -m http.server 8000`, then open port 8000 from the Ports panel. Check both pages, navigation, and a narrow browser window.
+**Local preview:** Open `index.html` from the cloned folder in your web browser. After saving edits in your editor, refresh the browser. No server or package installation is needed for this HTML/CSS project.
+
+**Codespaces preview:** Run `python3 -m http.server 8000`, then open port 8000 from the Ports panel.
+
+For either option, check both pages, navigation, and a narrow browser window.
 
 ## 4. Test .gitignore
 
@@ -69,7 +103,8 @@ Describe your changes, your preview checks, and what you learned about ignored f
 
 ## 7. Finish
 
-Stop your Codespace from its menu or https://github.com/codespaces. Delete it when no longer needed after confirming your work is pushed.
+- **Local repository:** Save your files, confirm your contribution is pushed, and close your editor when finished. Keep the cloned folder for future work.
+- **Codespaces:** Stop your Codespace from its menu or https://github.com/codespaces. Delete it when no longer needed after confirming your work is pushed.
 
 ## Extra challenge: upstream
 
