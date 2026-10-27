@@ -17,3 +17,5 @@ Thumbs.db
 
 # Personal notes
 private-notes.txt
+
+/config/.env.example 
